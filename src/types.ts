@@ -34,6 +34,9 @@ export interface Connection {
   platform_id: string;
   external_shop_id: string;
   status: "active" | "needs_reauth" | "disconnected";
+  access_token: string | null;
+  refresh_token: string | null;
+  token_expires_at: string | null;
   last_verified_at: string | null;
   created_at: string;
 }
