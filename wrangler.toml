@@ -1,0 +1,16 @@
+name = "oddshop-core"
+main = "src/index.ts"
+compatibility_date = "2026-08-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "oddshop-core-db"
+database_id = "30644519-1c63-4b77-b026-11bb85d51a45"
+
+[env.staging]
+name = "oddshop-core-staging"
+
+[[env.staging.d1_databases]]
+binding = "DB"
+database_name = "oddshop-core-db-staging"
+database_id = "6ceafcf8-ee19-47f5-8cf5-ebe3a5226b9f"
